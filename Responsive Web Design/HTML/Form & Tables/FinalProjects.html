@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Customer Feedback Survey</h1>
+  <p id="description">Please take a few minutes to share your feedback with us.</p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">
+      Full Name
+      <input id="name" type="text" placeholder=" sabbir Hossain" required>
+    </label>
+
+    <label id="email-label" for="email">
+      Email
+      <input id="email" type="email" placeholder=" sabbir@example.com" required>
+    </label>
+
+    <label id="number-label" for="number">
+      Age
+      <input id="number" type="number" placeholder="18" min="10" max="100">
+    </label>
+
+    <label for="dropdown">
+      Would you recommend us?
+      <select id="dropdown">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+
+    <fieldset>
+      <legend>How would you rate our service?</legend>
+      <label><input type="radio" name="rating" value="average"> Average</label>
+      <label><input type="radio" name="rating" value="excellent"> Excellent</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What did you like? (Select all that apply)</legend>
+      <label><input type="checkbox" id="feature-ui" value="ui-design"> Good UI Design</label>
+      <label><input type="checkbox" id="feature-speed" value="fast-performance"> Fast Performance</label>
+      <label><input type="checkbox" id="feature-support" value="customer-support"> Customer Support</label>
+    </fieldset>
+
+    <label for="comments">
+      Any other comments?
+      <textarea id="comments" minlength="20" maxlength="100" placeholder="Your valuable opinion here"></textarea>
+    </label>
+
+   <label for="submit">
+  <input id="submit" type="submit" value="Submit">
+  </label>
+
+  </form>
+</body>
+</html>
